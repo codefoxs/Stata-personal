@@ -1,3 +1,5 @@
+*! 0.1.1 11Jun2024 by CodeFox
+
 * 主命令
 cap program drop datedv
 program define datedv
