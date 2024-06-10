@@ -1,8 +1,3 @@
----
-toc: true
-
----
-
 # Stata command by CodeFox
 
 ## 1 Method
