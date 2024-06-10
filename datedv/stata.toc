@@ -1,0 +1,2 @@
+v 1
+p datedv DATEDV - Stata commands for date string division
