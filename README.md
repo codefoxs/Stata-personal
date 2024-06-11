@@ -9,7 +9,7 @@ Verify the name of the command you want to download, and then enter the followin
 net install command, from("https://raw.githubusercontent.com/codefoxs/Stata-personal/main/command/") replace
 
 * Version
-which `command`
+which command
 ```
 
 ## 2 Command list
