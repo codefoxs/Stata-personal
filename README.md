@@ -17,6 +17,6 @@ which command
 | Command                                                      | Function                                                    | Version |
 | ------------------------------------------------------------ | ----------------------------------------------------------- | ------- |
 | [datedv](https://github.com/codefoxs/Stata-personal/tree/main/datedv) | Quickly convert date strings to year, month, day and so on. | 0.1.1   |
-|                                                              |                                                             |         |
+| [cnprov](https://github.com/codefoxs/Stata-personal/tree/main/cnprov) | Stata commands for Chinese province strings conversion      | 0.1.1   |
 |                                                              |                                                             |         |
 
