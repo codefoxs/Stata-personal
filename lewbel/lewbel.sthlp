@@ -68,16 +68,29 @@ help {hi:lewbel}{right: 13Jun2024}
 {phang2}{inp:.} {stata `"ereturn list"'}{p_end}
 
 
+{title:存储变量（可以采用 reg2docx 的 scalars 输出）}
+
+{synoptset 30 tabbed}{...}
+{syntab:标量 Scalars}
+{synopt:{cmd:e(HetLM)}}Breusch–Pagan 检验卡方统计量{p_end}
+{synopt:{cmd:e(HetLMp)}}Breusch–Pagan 检验卡方统计量 p 值{p_end}
+{synopt:{cmd:e(Kleibergen_Paap_rk_LM)}}弱工具变量检验：Kleibergen Paap rk LM 值{p_end}
+{synopt:{cmd:e(Kleibergen_Paap_rk_LM_p)}}弱工具变量检验：Kleibergen Paap rk LM 的 p 值{p_end}
+{synopt:{cmd:e(Cragg_Donald_Wald_F)}}弱工具变量检验：Cragg Donald Wald F 值{p_end}
+{synopt:{cmd:e(Cragg_Donald_Wald_F_p)}}弱工具变量检验：Cragg Donald Wald F 的 p 值{p_end}
+{synopt:{cmd:e(Hansen_J)}}过度识别检验：Hansen J 值{p_end}
+{synopt:{cmd:e(Hansen_J_p)}}过度识别检验：Hansen J  的 p 值{p_end}
+
+
 {title:参考文献}
 
 {p 4 8 2}
-Lewbel, A. (2012). Using Heteroscedasticity to Identify and Estimate Mismeasured and Endogenous Regressor Models.
-{it:Journal of Business & Economic Statistics}, 30(1), 67–80.{p_end}
+Lewbel, A. (2012). Using Heteroscedasticity to Identify and Estimate Mismeasured and Endogenous Regressor Models. {it:Journal of Business & Economic Statistics}, 30(1), 67–80.{p_end}
 
 
 {title:作者}
 
-{phang}
-{bf: CodeFox: }{browse "https://github.com/codefoxs":Github}
-{phang}
-{bf: Keynes: }{browse "https://www.zhihu.com/people/Keynes":Zhihu}
+{phang}{bf: CodeFox: }{browse "https://github.com/codefoxs":Github}
+
+{phang}{bf: Keynes: }{browse "https://www.zhihu.com/people/Keynes":Zhihu}
+
