@@ -60,7 +60,7 @@ help {hi:lewbel}{right: 13Jun2024}
 
 {result}{dlgtab:Example for "lewbel test.dta"}{text}
 
-{phang2}{inp:.} {stata `"use "lewbel test.dta", clear"'}{p_end}
+{phang2}{inp:.} {stata `"use "https://github.com/codefoxs/Stata-personal/raw/main/lewbel/lewbel%20test.dta", clear"'}{p_end}
 {phang2}{inp:.} {stata `"global controls = "x2-x9""'}{p_end}
 {phang2}{inp:.} {stata `"xtset id year"'}{p_end}
 {phang2}{inp:.} {stata `"gen Ind_year = string(Industry) + "$" + string(year)"'}{p_end}
