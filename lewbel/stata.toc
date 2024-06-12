@@ -1,0 +1,2 @@
+v 1
+p cnprov CNPROV - Stata commands for Chinese province strings conversion

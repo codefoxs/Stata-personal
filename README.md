@@ -14,9 +14,9 @@ which command
 
 ## 2 Command list
 
-| Command                                                      | Function                                                    | Version |
-| ------------------------------------------------------------ | ----------------------------------------------------------- | ------- |
-| [datedv](https://github.com/codefoxs/Stata-personal/tree/main/datedv) | Quickly convert date strings to year, month, day and so on. | 0.1.1   |
-| [cnprov](https://github.com/codefoxs/Stata-personal/tree/main/cnprov) | Stata commands for Chinese province strings conversion      | 0.1.1   |
-|                                                              |                                                             |         |
+| Command                                                      | Function                                                     | Version |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------- |
+| [datedv](https://github.com/codefoxs/Stata-personal/tree/main/datedv) | Quickly convert date strings to year, month, day and so on.  | 0.1.1   |
+| [cnprov](https://github.com/codefoxs/Stata-personal/tree/main/cnprov) | Stata commands for Chinese province strings conversion       | 0.1.1   |
+| [lewbel](https://github.com/codefoxs/Stata-personal/tree/main/lewbel) | Heteroskedasticity-based instrumental variable regression (Lewbel, 2012) | 0.1.3   |
 
