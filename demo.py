@@ -19,3 +19,10 @@ print("README.md 已转移到博客目录中")
 os.system("git add .")
 os.system(f'git commit -am "{sys.argv[1]}"')
 os.system("git push origin main")
+
+print("Stata person 仓库已更新")
+
+os.system('cd "D:\code\Hexo"')
+os.system('hexo c && hexo g && hexo d')
+
+print("博客已同步更新")

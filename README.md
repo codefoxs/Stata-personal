@@ -19,4 +19,5 @@ which command
 | [datedv](https://github.com/codefoxs/Stata-personal/tree/main/datedv) | Quickly convert date strings to year, month, day and so on.  | 0.1.1   |
 | [cnprov](https://github.com/codefoxs/Stata-personal/tree/main/cnprov) | Stata commands for Chinese province strings conversion       | 0.1.1   |
 | [lewbel](https://github.com/codefoxs/Stata-personal/tree/main/lewbel) | Heteroskedasticity-based instrumental variable regression (Lewbel, 2012) | 0.1.3   |
+| [csmar](https://github.com/codefoxs/Stata-personal/tree/main/csmar) | Stata commands for load CSMAR xlsx file                      | 0.1.1   |
 
