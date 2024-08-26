@@ -1,3 +1,4 @@
+*! Version 0.1.4 26Aug2024: Bug fixed
 *! Version 0.1.3 13Jun2024: Support factor and time-serie variables
 *! Version 0.1.2 11May2024: Add by() option
 *! Version 0.1.1 09May2024: Lewbel IV method with reghdfe and ivreghdfe
@@ -5,11 +6,6 @@
 cap program drop lewbel
 program define lewbel, eclass
     syntax varlist(fv ts) [if] [in], Absorb(string) [VCE(string) CLuster(string) Z(string) BY(string) first keep opt(string)]
-
-    if "`vce'" != "" & "`cluster'" != ""{
-        dis as err "Choose one of vce or cluster methods"
-        exit
-    }
     
     marksample touse
     markout `touse' `z'
