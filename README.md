@@ -1,5 +1,8 @@
 # Stata command by CodeFox
 
+Author: Zhiwu
+Address: Guangdong University of Foreign Studies
+
 ## 1 Method
 
 Verify the name of the command you want to download, and then enter the following code to install or update the command
