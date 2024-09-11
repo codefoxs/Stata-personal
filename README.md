@@ -1,6 +1,7 @@
 # Stata command by CodeFox
 
 Author: Zhiwu
+
 Address: Guangdong University of Foreign Studies
 
 ## 1 Method
