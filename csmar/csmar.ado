@@ -4,7 +4,7 @@
 
 cap program drop csmar
 program define csmar
-    syntax anything, [REmove sheet(string) case(string) otheropt(string)]
+    syntax anything, [REmove sheet(string) case(string) Allstring otheropt(string)]
     
     dis as res "================== {it:Begin} =================="
     qui timer clear 1
@@ -60,7 +60,7 @@ program define csmar
             local f_name = subinstr("`f'", ".xlsx", "", .)
             
             dis as txt "Converting `f' to dta..."
-            csmar_xlsx "`f'", sheet("`sheet'") case("`case'") clear otheropt("`otheropt'")
+            csmar_xlsx "`f'", sheet("`sheet'") case("`case'") `allstring' clear otheropt("`otheropt'")
             
             qui save "`f_name'", replace
         }
@@ -99,7 +99,7 @@ program define csmar
     }
     else{
         dis as txt `"Converting `anything' to dta..."'
-        csmar_xlsx `anything', sheet("`sheet'") case("`case'") clear otheropt("`otheropt'")
+        csmar_xlsx `anything', sheet("`sheet'") case("`case'") `allstring' clear otheropt("`otheropt'")
         qui timer off 1
         dis as res "==================  {it:End}  =================="
         qui timer list 1
@@ -113,7 +113,7 @@ end
 
 cap program drop csmar_xlsx
 program define csmar_xlsx
-    syntax anything, [sheet(string) case(string) clear otheropt(string)]
+    syntax anything, [sheet(string) case(string) Allstring clear otheropt(string)]
     
     if "`case'" == ""{
         local case = "lower"
@@ -131,11 +131,13 @@ program define csmar_xlsx
         dis as error "Wrong type of case"
         exit
     }
-    qui import excel using `anything', sheet("`sheet'") firstrow case(`case') `clear' `otheropt'
+    qui import excel using `anything', sheet("`sheet'") firstrow `allstring' case(`case') `clear' `otheropt'
     
     foreach var of varlist * {
         label var `var' "`=`var'[1]' (`=`var'[2]')"
     }
     qui drop in 1/2
-    qui destring *, replace
+    if "`allstring'" == ""{
+        qui destring *, replace
+    }
 end
