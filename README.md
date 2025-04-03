@@ -2,26 +2,28 @@
 
 ## 1 Method
 
-Verify the name of the command you want to download, and then enter the following code to install or update the command
+Change the macro `command` to the name of the command you need to download, and run all the lines simultaneously.
 
 ### GitHub
 
 ```stata
 * Install
-net install [command], from("https://raw.githubusercontent.com/codefoxs/Stata-personal/main/[command]/") replace
+local command = "Command name"
+net install `command', from("https://raw.githubusercontent.com/codefoxs/Stata-personal/main/`command'/") replace
 
 * Version
-which [command]
+which `command'
 ```
 
 ### Gitee
 
 ```Stata
 * Install
-net install [command], from("https://gitee.com/code-fox/Stata-personal/raw/main/[command]/") replace
+local command = "Command name"
+net install `command', from("https://gitee.com/code-fox/Stata-personal/raw/main/`command'/") replace
 
 * Version
-which command
+which `command'
 ```
 
 ## 2 Command list
