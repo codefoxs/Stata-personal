@@ -28,12 +28,12 @@ which `command'
 
 ## 2 Command list
 
-| Command            | Function                                                     | Version |
-| ------------------ | ------------------------------------------------------------ | ------- |
-| [datedv](./datedv) | Quickly convert date strings to year, month, day and so on.  | 0.1.1   |
-| [cnprov](./cnprov) | Stata commands for Chinese province strings conversion       | 0.1.3   |
-| [lewbel](./lewbel) | Heteroskedasticity-based instrumental variable regression (Lewbel, 2012) | 0.1.4   |
-| [csmar](./csmar)   | Stata commands for load CSMAR xlsx and zip file              | 0.1.4   |
+| Command                                                      | Function                                                     | Version |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------- |
+| [datedv](https://github.com/codefoxs/Stata-personal/tree/main/datedv) | Quickly convert date strings to year, month, day and so on.  | 0.1.1   |
+| [cnprov](https://github.com/codefoxs/Stata-personal/tree/main/cnprov) | Stata commands for Chinese province strings conversion       | 0.1.3   |
+| [lewbel](https://github.com/codefoxs/Stata-personal/tree/main/lewbel) | Heteroskedasticity-based instrumental variable regression (Lewbel, 2012) | 0.1.4   |
+| [csmar](https://github.com/codefoxs/Stata-personal/tree/main/csmar) | Stata commands for load CSMAR xlsx and zip file              | 0.1.4   |
 
 ## 3 Comments
 
@@ -41,5 +41,9 @@ which `command'
 >
 > If you have any questions, please leave a message in issue.
 
+## 4 URLs
 
+For GitHub users: https://github.com/codefoxs/Stata-personal
+
+For Gitee users: https://gitee.com/code-fox/Stata-personal
 
