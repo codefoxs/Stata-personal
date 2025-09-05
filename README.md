@@ -31,7 +31,7 @@ which `command'
 | Command            | Function                                                     | Version |
 | ------------------ | ------------------------------------------------------------ | ------- |
 | [datedv](./datedv) | Quickly convert date strings to year, month, day and so on.  | 0.1.1   |
-| [cnprov](./cnprov) | Stata commands for Chinese province strings conversion       | 0.1.2   |
+| [cnprov](./cnprov) | Stata commands for Chinese province strings conversion       | 0.1.3   |
 | [lewbel](./lewbel) | Heteroskedasticity-based instrumental variable regression (Lewbel, 2012) | 0.1.4   |
 | [csmar](./csmar)   | Stata commands for load CSMAR xlsx and zip file              | 0.1.4   |
 

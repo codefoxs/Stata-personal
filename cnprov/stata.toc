@@ -1,2 +1,5 @@
-v 1
+v 2
+d Author:
+d - Keynes, Zhihu
+d - CodeFox, GitHub
 p cnprov CNPROV - Stata commands for Chinese province strings conversion

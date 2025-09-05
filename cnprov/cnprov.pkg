@@ -1,4 +1,16 @@
-v 1
+v 2
+
+d Author:
+d - Keynes, Zhihu
+d - CodeFox, GitHub
+d
+d
+d KW: China
+d KW: Province
+d KW: Province Code
+d 
+d Distribution-Date: 20250905
+d 
 
 f cnprov.ado
 f cnprov.sthlp
