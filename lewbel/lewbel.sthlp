@@ -58,13 +58,16 @@ help {hi:lewbel}{right: 13Jun2024}
 
 {title:例子}
 
-{result}{dlgtab:Example for "lewbel test.dta"}{text}
-
 {phang2}{inp:.} {stata `"use "https://github.com/codefoxs/Stata-personal/raw/main/lewbel/lewbel%20test.dta", clear"'}{p_end}
+
 {phang2}{inp:.} {stata `"global controls = "x2-x9""'}{p_end}
+
 {phang2}{inp:.} {stata `"xtset id year"'}{p_end}
+
 {phang2}{inp:.} {stata `"gen Ind_year = string(Industry) + "$" + string(year)"'}{p_end}
+
 {phang2}{inp:.} {stata `"lewbel y x1 $controls , a(Country Ind_year) cl(Ind_year) keep first"'}{p_end}
+
 {phang2}{inp:.} {stata `"ereturn list"'}{p_end}
 
 
@@ -88,9 +91,10 @@ help {hi:lewbel}{right: 13Jun2024}
 Lewbel, A. (2012). Using Heteroscedasticity to Identify and Estimate Mismeasured and Endogenous Regressor Models. {it:Journal of Business & Economic Statistics}, 30(1), 67–80.{p_end}
 
 
-{title:作者}
+{bf:作者}
 
-{phang}{bf: CodeFox: }{browse "https://github.com/codefoxs":Github}
-
-{phang}{bf: Keynes: }{browse "https://www.zhihu.com/people/Keynes":Zhihu}
+{phang}
+{bf: CodeFox}  {browse "https://github.com/codefoxs":Github}
+{phang}
+{bf: Keynes}  {browse "https://www.zhihu.com/people/Keynes":Zhihu}
 
