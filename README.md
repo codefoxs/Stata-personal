@@ -34,6 +34,7 @@ which `command'
 | [cnprov](https://github.com/codefoxs/Stata-personal/tree/main/cnprov) | Stata commands for Chinese province strings conversion       | 0.1.3   |
 | [lewbel](https://github.com/codefoxs/Stata-personal/tree/main/lewbel) | Heteroskedasticity-based instrumental variable regression (Lewbel, 2012) | 0.1.4   |
 | [csmar](https://github.com/codefoxs/Stata-personal/tree/main/csmar) | Stata commands for load CSMAR xlsx and zip file              | 0.1.4   |
+| [ivreghdfef](https://github.com/codefoxs/Stata-personal/tree/main/ivreghdfef) | ivreghdfe output with constant term, F/LM tests and two stages | 0.1.1   |
 
 ## 3 Comments
 
