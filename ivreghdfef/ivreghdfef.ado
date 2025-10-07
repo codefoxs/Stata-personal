@@ -39,8 +39,8 @@ cap program define ivreghdfef, eclass
     `qui1' reghdfe `x' `iv' `control' if `esample', `regopt'
     local b1 = r(table)[1, 1]
     local p1 = r(table)[4, 1]
-    if "`estore'" != ""{
-        est store `estore'_first
+    if "`store'" != ""{
+        est store `store'_first
     }
     cap drop `x'
     qui predict double `x'
@@ -52,8 +52,8 @@ cap program define ivreghdfef, eclass
     ereturn scalar rkf = `rkf'
     ereturn scalar rklm = `rklm'
     ereturn scalar hansenj = `hansenj'
-    if "`estore'" != ""{
-        est store `estore'_second
+    if "`store'" != ""{
+        est store `store'_second
     }
     cap drop `x'
     qui gen `x' = `x_raw', before(`x_raw')
