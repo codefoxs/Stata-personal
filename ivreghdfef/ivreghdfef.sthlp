@@ -46,15 +46,15 @@
 
 {pstd}Ouput first stage{p_end}
 {phang2}{cmd:. webuse nlswork}{p_end}
-{phang2}{cmd:. ivreghdfef ln_w ttl_exp age tenure not_smsa south , iv(hours) o( absorb(idcode year) cluster(idcode) ) first store(IV)}{p_end}
+{phang2}{cmd:. ivreghdfef ln_w ttl_exp tenure not_smsa south , iv(hours age) o( absorb(idcode year) cluster(idcode) ) first store(IV)}{p_end}
 {phang2}{cmd:. }{p_end}
 {phang2}{cmd:. reg2docx IV_first IV_second using "IV.docx", replace ///}{p_end}
 {phang2}{cmd:. b(%20.4f) t(%20.4f) ///}{p_end}
-{phang2}{cmd:. scalars(N(%20.0fc) r2_a(%20.4f) cdf(%20.4f) rkf(%20.4f) rklm(%20.4f) rklmp(%20.4f) hansenj(%20.4f) hansenjp(%20.4f)) ///}{p_end}
-{phang2}{cmd:. order() ///}{p_end}
+{phang2}{cmd:. scalars(N(%20.0fc) r2_a(%20.4f) cdf(%20.4f) rkf(%20.4f) rklm(%20.4f) hansenj(%20.4f)) ///}{p_end}
+{phang2}{cmd:. order(ttl_exp hours age tenure not_smsa south) ///}{p_end}
 {phang2}{cmd:. addfe("Id=Yes" "Year=Yes") ///}{p_end}
 {phang2}{cmd:. title("IV 2SLS") ///}{p_end}
-{phang2}{cmd:. mtitles() ///}{p_end}
+{phang2}{cmd:. mtitles("First stage" "Second stage") ///}{p_end}
 {phang2}{cmd:. font("Times New Roman", 9) ///}{p_end}
 {phang2}{cmd:. margin(top, 3.17cm) margin(bottom, 3.17cm)}{p_end}
 
@@ -74,9 +74,7 @@
 {synopt:{cmd:e(cdf)}}Cragg-Donald Wald F statistics{p_end}
 {synopt:{cmd:e(rkj)}}Kleibergen Paap rk Wald F statistics{p_end}
 {synopt:{cmd:e(rklm)}}Kleibergen Paap rk LM statistics{p_end}
-{synopt:{cmd:e(rklmp)}}p-value for Kleibergen Paap rk LM statistics{p_end}
 {synopt:{cmd:e(hansenj)}}Hansen J statistics{p_end}
-{synopt:{cmd:e(hansenjp)}}p-value for Hansen J statistics{p_end}
 
 {syntab:Scalars}
 {synopt:{cmd:e(N)}}number of observations{p_end}
