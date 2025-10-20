@@ -72,7 +72,7 @@
 {synoptset 24 tabbed}{...}
 {syntab:Test statistics}
 {synopt:{cmd:e(cdf)}}Cragg-Donald Wald F statistics{p_end}
-{synopt:{cmd:e(rkj)}}Kleibergen Paap rk Wald F statistics{p_end}
+{synopt:{cmd:e(rkf)}}Kleibergen Paap rk Wald F statistics{p_end}
 {synopt:{cmd:e(rklm)}}Kleibergen Paap rk LM statistics{p_end}
 {synopt:{cmd:e(hansenj)}}Hansen J statistics{p_end}
 
@@ -147,5 +147,6 @@ or as part of the fixed effects{p_end}
 {title:Author}
 
 {pstd}公众号：凯恩斯学计量{p_end}
+
 
 {phang}{p_end}
